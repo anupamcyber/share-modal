@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="./form photo.png" alt="" width="100px" height="100px">
+            </div>
+            <div class="user-name">
+                <h2>Anupam shaw</h2>
+            </div>
+            <div class="designation">
+                <h3>Software development Engineer</h3>
+            </div>
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share my profile</div>
+                </button>
+                <button class="btn-follow btn-card">Follow me </button>
+            </div>
+        </div>
+    </div>
+    <!-- modal component -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share my profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+
+        <div>
+            <h3>Share this via</h3>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/anupam-shaw/" class="icon" target="_blank" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/_anupamshaw/" class="icon" target="_blank" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="wa.me/917296028305" class="icon" target="_blank" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://web.telegram.im/#@Anupamshaw" class="icon" target="_blank" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./edge.js"></script>
+</body>
+
+</html>
